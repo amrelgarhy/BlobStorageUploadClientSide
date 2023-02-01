@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Upload Page</title>
+    <script src="~/js/dist/fsAzureStorage-bundle.js"></script>
+</head>
+<body>
+    <h1>Welcome to my Upload page</h1>
+    <p>This is a simple example uploading files to azure blob storage using javascript sdk.</p>
+
+    <div id="progress"></div>
+
+    <form>
+        <input type="file" id="file-input" multiple />
+        <button type="button" id="upload-button" onclick="uploadMyFiles()">Upload</button>
+    </form>
+
+
+    <script>
+        function uploadMyFiles() {
+            var files = document.getElementById('file-input').files;
+            var sasToken = "@(Html.Raw(Model.SasToken))";
+            var accountUrl = "@Model.BlobAccountUri";
+            var containerName = '@Model.ContainerName';
+
+            fsAzureBlobStorage.uploadFiles(accountUrl, sasToken, containerName, files);
+        }
+    </script>
+
+</body>
+</html>
