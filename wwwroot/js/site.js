@@ -11,6 +11,7 @@ const uploadFiles = async (accountUrl, sasToken, containerName, files) => {
     const progressBar = document.createElement("progress");
     document.body.appendChild(progressBar);
 
+    
     // Create an array to store the promises for each file upload
     const promises = [];
 
