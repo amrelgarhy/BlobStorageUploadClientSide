@@ -17,6 +17,8 @@ This small project show how to upload files to Azure Blob Storage using [Azure B
             "AccountKey": "ACCOUNTKEY"
           },
 - Run the website and test uploading files
+- ![chrome_4iMEqGcC6b](https://user-images.githubusercontent.com/660190/216196872-ac3c568b-9a76-4826-93bd-4467efe9efa4.png)
+
 
 # Step by step
 - Create new ASP.Net Core website using Visual Stuio
