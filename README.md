@@ -21,7 +21,7 @@ This small project show how to upload files to Azure Blob Storage using [Azure B
 
 
 # Step by step
-- Create new ASP.Net Core website using Visual Stuio
+- Create new ASP.Net Core website using Visual Studio
 - Add Azure.Storage.Blobs nuget package
 - Add configuration keys in appsettings.json file
 - Install Azure Blob Storage node modules
@@ -34,7 +34,7 @@ This small project show how to upload files to Azure Blob Storage using [Azure B
 	- This should generate the bundle file in the configured dist folder
 - Write down the upload page HTML
 	- Reference the generated bundle js file
-- Allow getting the Sas token through the server side c#
+- Allow getting the SAS token through the server side c#
 
 ![devenv_8G9yqUERcH](https://user-images.githubusercontent.com/660190/216196220-f0344ea9-deb5-4e2e-bb6b-569da561ca94.png)
 
